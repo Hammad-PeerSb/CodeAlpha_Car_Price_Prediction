@@ -99,7 +99,7 @@ import streamlit as st
 @st.cache_resource
 def load_model():
     try:
-        return joblib.load(r"Data\Notebooks\models\car_price_prediction_model.pkl")
+        return joblib.load(r"D:\ML,AI & DS PROJECTS\Car_Price_prediction\Data\car_price_prediction_model.pkl")
     except Exception as e:
         st.error(f"Error loading model.pkl: {e}")
         return None
@@ -209,5 +209,5 @@ if predict_button:
 
 # --- FOOTER ---
 st.markdown("---")
-st.write("PeerSb")
-st.caption("AutoPrice • DataScience Project")
+st.write("PEER SB")
+st.caption("AutoPrice Predictor • DataScience Project")
