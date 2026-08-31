@@ -13,6 +13,12 @@ Built with Python, Scikit-learn, Pandas and Streamlit.
 </p>
 
 ---
+## 🚀 Live Demo
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://car-price-predictor-peersb723.streamlit.app/)
+
+**🔗 [Open Auto Price Predictor](https://car-price-predictor-peersb723.streamlit.app/)**
+
 
 ## 📌 Overview
 

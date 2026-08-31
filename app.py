@@ -145,7 +145,7 @@ with col1:
         "💰 Current Showroom / Present Price (PKR)",
         min_value=100000.0,
         max_value=10000000.0,
-        value=350000.0,
+        value=1500000.0,
         step=50000.0,
         help="Enter current new model market price in PKR."
     )
