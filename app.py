@@ -96,10 +96,12 @@ st.markdown("""
 import joblib
 import streamlit as st
 
+
+
 @st.cache_resource
 def load_model():
     try:
-        return joblib.load(r"D:\ML,AI & DS PROJECTS\Car_Price_prediction\Notebook\car_price_prediction_model.pkl")
+        return joblib.load(r"Notebook\car_price_prediction_model.pkl")
     except Exception as e:
         st.error(f"Error loading model.pkl: {e}")
         return None
