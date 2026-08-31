@@ -19,7 +19,9 @@ Built with Python, Scikit-learn, Pandas and Streamlit.
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://car-price-predictor-peersb723.streamlit.app/)
 
 **🔗 [Open Auto Price Predictor](https://car-price-predictor-peersb723.streamlit.app/)**
---- 
+
+
+---
 
 ## 📌 Overview
 
@@ -119,9 +121,11 @@ The analysis can include:
 
 Additional features are generated to provide useful information to the model.
 
-#### 👨‍💻 Author
+---
 
-**PEER_SB**
+### 👨‍💻 Author
+
+**PEER_SB** 💮
 
 Data Science & Machine Learning Enthusiast
 
