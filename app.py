@@ -1,7 +1,34 @@
 import streamlit as st
+import joblib
 import pandas as pd
 import numpy as np
 import pickle
+from pathlib import Path
+
+
+# --- MODEL LOADING WITH CACHING ---
+
+@st.cache_resource
+def load_model():
+    model_path = Path(__file__).parent / "Notebook" / "car_price_prediction_model.pkl"
+
+    try:
+        return joblib.load(model_path)
+
+    except FileNotFoundError:
+        st.error(
+            f"Pre-trained model not found at: {model_path}"
+        )
+        return None
+
+    except Exception as e:
+        st.error(
+            f"Error loading pre-trained model: {e}"
+        )
+        return None
+
+model = load_model()
+
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(
@@ -92,21 +119,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# --- MODEL LOADING WITH CACHING ---
-import joblib
-import streamlit as st
 
-
-
-@st.cache_resource
-def load_model():
-    try:
-        return joblib.load(r"Notebook\car_price_prediction_model.pkl")
-    except Exception as e:
-        st.error(f"Error loading model.pkl: {e}")
-        return None
-
-model = load_model()
 
 # --- HEADER SECTION ---
 st.markdown("""
